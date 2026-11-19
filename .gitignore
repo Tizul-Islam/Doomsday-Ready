@@ -34,3 +34,5 @@ coverage/
 # Prisma
 # server/prisma/*.db (if any local db files)
 
+.prisma-composer/
+.alchemy/
