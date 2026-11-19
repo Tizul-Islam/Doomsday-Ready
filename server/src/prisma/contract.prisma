@@ -1,0 +1,6 @@
+// use prisma-8
+
+model Movie {
+  id    Int    @id @default(autoincrement())
+  title String
+}
