@@ -1,0 +1,29 @@
+{
+  "name": "doomsday-ready-server",
+  "version": "1.0.0",
+  "description": "Backend API for Doomsday Ready MCU rewatch planner and cinema booking optimizer",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.4.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "prisma": "^6.4.1",
+    "supertest": "^7.0.0",
+    "vitest": "^3.0.7"
+  }
+}
+
